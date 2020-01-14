@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         smartTabLayout = findViewById(R.id.smartTabLayout);
 
         getSupportActionBar().setElevation(0);
+        getSupportActionBar().setTitle("English for Kids");
 
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(),

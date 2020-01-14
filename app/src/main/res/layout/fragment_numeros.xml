@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.NumerosFragment"
+    android:background="@drawable/segundo_fundo">
+
+    <ImageButton
+        android:id="@+id/imageNumeroUm"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="24dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/um"
+        app:layout_constraintBottom_toTopOf="@+id/imageNumeroTres"
+        app:layout_constraintEnd_toStartOf="@+id/imageNumeroDois"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageNumeroDois"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/dois"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageNumeroQuatro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageNumeroUm"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imageNumeroTres"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/tres"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageNumeroCinco"
+        app:layout_constraintEnd_toStartOf="@+id/imageNumeroQuatro"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNumeroUm" />
+
+    <ImageButton
+        android:id="@+id/imageNumeroQuatro"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/quatro"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/imageNumeroSeis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageNumeroTres"
+        app:layout_constraintTop_toBottomOf="@+id/imageNumeroDois" />
+
+    <ImageButton
+        android:id="@+id/imageNumeroCinco"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/cinco"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageNumeroSeis"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageNumeroTres" />
+
+    <ImageView
+        android:id="@+id/imageNumeroSeis"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_margin="24dp"
+        android:src="@drawable/seis"
+        android:background="@android:color/transparent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageNumeroCinco"
+        app:layout_constraintTop_toBottomOf="@+id/imageNumeroQuatro" />
+</androidx.constraintlayout.widget.ConstraintLayout>

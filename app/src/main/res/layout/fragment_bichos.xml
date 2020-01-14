@@ -13,7 +13,6 @@
         android:layout_height="0dp"
         android:layout_margin="24dp"
         android:background="@android:color/transparent"
-        android:onClick="reproduzSom"
         android:src="@drawable/cao"
         app:layout_constraintBottom_toTopOf="@+id/imageLeao"
         app:layout_constraintEnd_toStartOf="@+id/imageGato"
